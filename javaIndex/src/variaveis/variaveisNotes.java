@@ -1,5 +1,7 @@
 package variaveis;
 
+// Learning Variables
+
 public class variaveisNotes {
     public static void main(String[] args) {
         /*Primitive Types (Variables)
