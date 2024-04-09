@@ -13,6 +13,8 @@ public class mediasSalariosFor {
         int contFilhos = 0;
         int calcMediaFilhos = 0;
 
+        double percentualPessoasSalario = 0;
+
         for (int i = 1; i <= habitantes; i++) {
             System.out.println("\nHabitante " + i);
             System.out.print("Informe o seu salário: ");
@@ -24,10 +26,19 @@ public class mediasSalariosFor {
             calcMediaSalario = (contSalario += salario) / habitantes;
             calcMediaFilhos = (contFilhos += filhos) / habitantes;
 
+           
+            if (salario >= 500) {
+                percentualPessoasSalario = (i / 100) * habitantes;
+                System.out.println(percentualPessoasSalario);
+            }
+            
+
         }
         
         System.out.println(calcMediaSalario);
         System.out.println(calcMediaFilhos);
+        System.out.println(percentualPessoasSalario);
+
 
     }
 }
