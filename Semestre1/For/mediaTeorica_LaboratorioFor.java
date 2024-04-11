@@ -1,8 +1,8 @@
-package Semestre1;
+package Semestre1.For;
 
 import java.util.Scanner;
 
-public class mediaTeorica_Laboratorio {
+public class mediaTeorica_LaboratorioFor {
     public static void main(String[] args) {
         int alunos = 30;
         Scanner scanner = new Scanner(System.in);

@@ -1,4 +1,4 @@
-package Semestre1;
+package Semestre1.For;
 
 public class criacaoDeFiguraComFor {
     public static void main(String[] args) {

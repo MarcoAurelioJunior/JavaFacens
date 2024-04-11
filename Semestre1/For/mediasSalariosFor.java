@@ -1,4 +1,4 @@
-package Semestre1;
+package Semestre1.For;
 
 import java.util.Scanner;
 
