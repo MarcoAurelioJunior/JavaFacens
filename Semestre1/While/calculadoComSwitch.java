@@ -57,6 +57,11 @@ public class calculadoComSwitch {
 
                     System.out.print("Escreva outro número: ");
                     num2 = scanner.nextInt();
+
+                    if (num1 == 0 || num2 == 0) {
+                        System.out.println("\nNão é possivel dividir por ZERO, tente novamente!");
+                        break;
+                    }
                     
                     int dividir = num1 / num2;
                     System.out.println("\nAo dividir " + num1 + " e " + num2 + " temos o resultado de: " + dividir);

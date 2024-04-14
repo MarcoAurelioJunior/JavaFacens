@@ -8,21 +8,22 @@ public class mediaTeorica_LaboratorioFor {
         Scanner scanner = new Scanner(System.in);
 
         for (int i = 1; i <= alunos; i++) {
-            System.out.println("Aluno " + i);
+            System.out.println("\nAluno " + i);
             System.out.print("Coloque sua média de teoria: ");
-            double mediaTeoria = scanner.nextFloat();
+            float mediaTeoria = scanner.nextFloat();
 
             System.out.print("Coloque sua média de laboratório: ");
-            double mediaLaboratorio = scanner.nextFloat();
+            float mediaLaboratorio = scanner.nextFloat();
 
-            double calcMediaFinal = (mediaTeoria * 0.6) + (mediaLaboratorio * 0.4);
+            float calcMediaFinal = (mediaTeoria * 0.6f) + (mediaLaboratorio * 0.4f);
+        
 
             if(calcMediaFinal >= 7){
-                System.out.println("\nVocê foi BEM.\n");
+                System.out.printf("\nVocê foi BEM. Com uma média final de: %.1f \n",calcMediaFinal);
             }else if(calcMediaFinal >= 5 && calcMediaFinal < 7){
-                System.out.println("\nVocê foi RAZOáVEL.\n" );
+                System.out.printf("\nVocê foi RAZOáVEL. Com uma média final de: %.1f \n",calcMediaFinal);
             }else if(calcMediaFinal < 5){
-                System.out.println("\nVocê foi MAL.\n");
+                System.out.printf("\nVocê foi MAL. Com uma média final de: %.1f \n",calcMediaFinal);
             }else{
                 System.out.println("\nOcorreu algum erro!\n");
             }
