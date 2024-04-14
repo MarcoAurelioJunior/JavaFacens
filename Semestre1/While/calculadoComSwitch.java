@@ -6,15 +6,14 @@ public class calculadoComSwitch {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int opcao = 1;
-        int num1 = 0;
-        int num2 = 0;
+        int opcao = 1; //Opção == 1
+        int num1 = 0; //inicializa num1
+        int num2 = 0; //inicializa num2
 
-        while (opcao != 5 ) {
+        while (opcao != 5 ) { //Se opção for diferente de 5
             System.out.println("\nO que deseja fazer?\n");
             System.out.print("1 - Somar \n2 - Subtrair \n3 - Multiplicar \n4 - Dividir \n5 - Sair \nEscolha uma dessas opções: ");
             opcao = scanner.nextInt();
-
             
             switch (opcao) {
                 case 1:
@@ -24,7 +23,7 @@ public class calculadoComSwitch {
                     System.out.print("Escreva outro número: ");
                     num2 = scanner.nextInt();
 
-                    int soma = num1 + num2;
+                    int soma = num1 + num2; //Calculo
                     System.out.println("\nAo somar " + num1 + " e " + num2  + " temos o resultado de: " + soma);
                     break;
                     
@@ -36,7 +35,7 @@ public class calculadoComSwitch {
                     num2 = scanner.nextInt();
 
 
-                    int subtrair = num1 - num2;
+                    int subtrair = num1 - num2; //Calculo
                     System.out.println("\nAo subtrair " + num1 + " e " + num2 + " temos o resultado de: " + subtrair);
                     break;
 
@@ -47,7 +46,7 @@ public class calculadoComSwitch {
                     System.out.print("Escreva outro número: ");
                     num2 = scanner.nextInt();
 
-                    int multiplicar = num1 * num2;
+                    int multiplicar = num1 * num2; //Calculo
                     System.out.println("\nMultiplicando " + num1 + " e " + num2 + " temos o resultado de: " + multiplicar);
                     break;
 
@@ -61,16 +60,16 @@ public class calculadoComSwitch {
                     if (num1 == 0 || num2 == 0) {
                         System.out.println("\nNão é possivel dividir por ZERO, tente novamente!");
                         break;
-                    }
+                    } //Se algum número digitado for 0 então aparece essa mensagem, no caso não podemos ter divisão por 0
                     
-                    int dividir = num1 / num2;
+                    int dividir = num1 / num2; //Calculo
                     System.out.println("\nAo dividir " + num1 + " e " + num2 + " temos o resultado de: " + dividir);
                     break;
                 default:
                     if (opcao == 5) {
-                        System.out.println("Programa encerrado.");
+                        System.out.println("\nPrograma encerrado.");//Caso digite 5
                     }else{
-                        System.out.println("Opção invalida, tente novamente!");
+                        System.out.println("\nOpção invalida, tente novamente!"); //Caso não tenha a opção digitada
                     }
                     break;
             }

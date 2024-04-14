@@ -46,7 +46,7 @@ public class maiorNumeroeMediaAritimeticaWhile {
 
         }
 
-        scanner.close(); //Fecha scanner
+        scanner.close();
 
     }
 }

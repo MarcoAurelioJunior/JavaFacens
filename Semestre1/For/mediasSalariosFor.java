@@ -18,7 +18,7 @@ public class mediasSalariosFor {
 
         double porcentagemSalarioPessoas = 0; //Adiciona 1 para cada pessoa com salario igual ou maior a 500
 
-        int habitanteAtual = 0; //Pega o habitante com maior salario e coloca um número que adicionado com o i++ do loop for
+        int habitanteAtual = 0; //Pega o habitante com maior salario e coloca um número que é adicionado com o i++ do loop for, ex: habitante 5
 
         for (int i = 1; i <= habitantes; i++) {
             System.out.println("\nHabitante " + i);
@@ -28,21 +28,21 @@ public class mediasSalariosFor {
             System.out.print("Quantos filhos o(a) senhor(a) têm: ");
             int filhos = scanner.nextInt();
 
-            calcMediaSalario = (contSalario += salario) / habitantes;
-            calcMediaFilhos = (contFilhos += filhos) / habitantes;
+            calcMediaSalario = (contSalario += salario) / habitantes; //Calculo
+            calcMediaFilhos = (contFilhos += filhos) / habitantes; //Calculo
 
             if (salario > salarioAtualParaVerificarSeEMaior) {
                 salarioAtualParaVerificarSeEMaior = salario;
-                habitanteAtual = i;
-            }
+                habitanteAtual = i;//número do habitante
+            } //Verifica o maior salario e adiciona em salarioAtualParaVerificar e ainda pega o número do habitante
 
             if (salario >= 500) {
                 porcentagemSalarioPessoas += 1;
-            }      
+            }//Adiciona + 1 para porcentagemSalarioPessoas para ser calculado ao final     
 
         }
 
-        double calculoPorcentagem = (porcentagemSalarioPessoas / habitantes) * 100;
+        double calculoPorcentagem = (porcentagemSalarioPessoas / habitantes) * 100; //Faz o calculo da porcentagem de pessoas com mais de 500 reais
         
         System.out.println("\n - A média salárial de todos os habitantes é de: R$" + calcMediaSalario);
         System.out.println(" - A média dos filhos de todos os habitante é de: " + (int)calcMediaFilhos + " filho(s).");
