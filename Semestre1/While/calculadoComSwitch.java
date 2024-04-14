@@ -75,7 +75,7 @@ public class calculadoComSwitch {
                     break;
             }
     
-
         }
+        scanner.close();
     }
 }
