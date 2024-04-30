@@ -18,5 +18,7 @@ public class exercicio2 {
         }
 
         System.out.println("O resultado da soma de todos os números é de: " + soma);
+
+        scanner.close();
     }
 }

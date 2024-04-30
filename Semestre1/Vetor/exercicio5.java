@@ -6,7 +6,6 @@ public class exercicio5 {
         Scanner scanner = new Scanner(System.in);
 
         int[] vetorImpar = new int[5];
-        int[] valoresImpares = new int[5];
 
         for(int i = 0; i < vetorImpar.length; i++){
             System.out.print("Escreva o elemento " + (i + 1) + ": ");
@@ -18,5 +17,7 @@ public class exercicio5 {
                 System.out.print(vetorImpar[j] + ", ");                
             }
         }
+
+        scanner.close();
     }
 }

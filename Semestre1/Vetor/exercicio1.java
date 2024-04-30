@@ -19,5 +19,7 @@ public class exercicio1 {
         for (int j = 0; j < vetorInt.length; j++) {
             System.out.print(vetorInt[j] + ", ");
         }
+
+        scanner.close();
     }
 }

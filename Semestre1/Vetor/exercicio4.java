@@ -19,5 +19,7 @@ public class exercicio4 {
         calculaMedia = soma / vetorMedia.length;
 
         System.out.println("A média de todos os números digitados é de: " + calculaMedia);
+
+        scanner.close();
     }
 }
