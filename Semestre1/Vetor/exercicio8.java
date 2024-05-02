@@ -24,7 +24,7 @@ public class exercicio8 {
             } // Se o elemento for igual ao que quer retirar então ele apenas ignora, e coloca +1 no contador que pula um elemento
         }
 
-        for (int k = 0; k < contador; k++) {
+        for (int k = 0; k < contador; k++) { //Coloca o contador para que fique do tamanho da lista atual
             System.out.println(vetorRemove[k] + ", " );
         }
 
