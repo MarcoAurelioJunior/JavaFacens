@@ -27,5 +27,7 @@ public class exercicio9 {
                 System.out.print(vetorIntercala2[j] + " ");
             }
         }
+
+        scanner.close();
     }
 }

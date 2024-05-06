@@ -26,5 +26,7 @@ public class exercicio10 {
         for (int k = 0; k < 5; k++) {
             System.out.println(vetorCompressao[k]);
         }
+
+        scanner.close();
     }
 }
