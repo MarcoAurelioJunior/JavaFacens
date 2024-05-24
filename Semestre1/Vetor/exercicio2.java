@@ -1,23 +1,21 @@
 package Semestre1.Vetor;
 
 import java.util.Scanner;
-
 public class exercicio2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int[] vetorIntSoma = new int[5];
+        int[] vetor = new int[5];
         int soma = 0;
 
-        for (int i = 0; i < vetorIntSoma.length; i++) {
-            System.out.print("Digite o elemento " + (i + 1) + ": ");
-            vetorIntSoma[i] = scanner.nextInt();
+        for(int i = 0; i < vetor.length; i++){
+            System.out.print("Digite os valores: ");
+            vetor[i] = scanner.nextInt();
 
-            soma += vetorIntSoma[i];
-
+            soma += vetor[i];
         }
 
-        System.out.println("O resultado da soma de todos os números é de: " + soma);
+        System.out.println("A soma de todos os elementos é de: " + soma);
 
         scanner.close();
     }

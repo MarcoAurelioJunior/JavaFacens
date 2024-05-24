@@ -5,25 +5,22 @@ import java.util.Scanner;
 public class exercicio3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        
-        int[] vetorMaiorNumero = new int[5];
-        int maiorNumero = 0;
 
-        for(int i = 0; i < vetorMaiorNumero.length; i++){
-            System.out.print("Escreva o elemento " + (i + 1) + ": ");
-            vetorMaiorNumero[i] = scanner.nextInt();
+        int[] vetor = new int[5];
+        int maiorElemento = 0;
 
-            maiorNumero = vetorMaiorNumero[i];
-        }
+        for(int i = 0; i < vetor.length; i++){
+            System.out.print("Digite os valores: ");
+            vetor[i] = scanner.nextInt();
 
-        for(int j = 0; j < vetorMaiorNumero.length; j++ ){
-            if (vetorMaiorNumero[j] > maiorNumero) {
-                maiorNumero = vetorMaiorNumero[j];
+            if (vetor[i] > maiorElemento) {
+                maiorElemento = vetor[i];
             }
         }
 
-        System.out.println("O maior número é: " + maiorNumero);
+        System.out.println("O maior elemento é: " + maiorElemento );
 
         scanner.close();
+
     }
 }

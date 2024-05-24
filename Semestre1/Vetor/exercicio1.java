@@ -1,25 +1,12 @@
 package Semestre1.Vetor;
 
-import java.util.Scanner;
-
 public class exercicio1 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        int[] vetor = {2, 5, 7, 10, 20};
 
-        int[] vetorInt = new int[5];
-        
-
-        for (int i = 0; i < 5; i++) {
-            System.out.print("Elemento " + (i + 1) + ": ");
-            vetorInt[i] = scanner.nextInt();
-
+        for(int i = 0; i < vetor.length; i++){
+            System.out.print(vetor[i] + " - ");
         }
 
-        System.out.println("\nSua lista!");
-        for (int j = 0; j < vetorInt.length; j++) {
-            System.out.print(vetorInt[j] + ", ");
-        }
-
-        scanner.close();
     }
 }
