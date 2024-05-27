@@ -1,6 +1,5 @@
 package Semestre1.Vetor;
 
-import java.util.Scanner;
 public class exercicio7 {
     public static void main(String[] args) {
         int[] vetorOrdenado = {8, 5, 4, 2, 7};
