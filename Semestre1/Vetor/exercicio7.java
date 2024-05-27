@@ -3,21 +3,23 @@ package Semestre1.Vetor;
 import java.util.Scanner;
 public class exercicio7 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        int[] vetorOrdenado = {8, 5, 4, 2, 7};
+        boolean ordenado = true;
 
-        int[] vetorOrdem = new int[5];
-        int[] resultadoAtual = new int[5];
-
-        for(int i = 0; i < vetorOrdem.length; i++){
-            System.out.print("Digite o elemento " + (i + 1) + ": ");
-            vetorOrdem[i] = scanner.nextInt();
-
-            resultadoAtual[i] = vetorOrdem[i];  
+        for(int i = 0; i <= 3; i++){
+            if(vetorOrdenado[i] < vetorOrdenado[i+1]){
+                ordenado = true;
+            }else{
+                ordenado = false;
+                break;
+            }
         }
 
-        scanner.close();
-
-        
+        if (ordenado) {
+            System.out.println("Vetor ordenado!");
+        }else{
+            System.out.println("Vetor não ordenado");
+        }
 
     }
 }

@@ -20,9 +20,9 @@ public class exercicio10 {
             }
         }
 
-        while (contador < vetorCompressao.length) { //Ex: se tivermos 3 números diferentes de 0 então contador == 0. então ele vai fazer essa função até o número de elementos da lista (5)
-            vetorCompressao[contador++] = 0; //Como são 3 elementos diferentes de 0. então o indice em que ele vai colocar os ZEROS é no 3, e no 4, pois ele vai somar mais um ao contador, assim finalizando em 4, que é menor que 5, então saindo do while
-        }
+        while (contador < vetorCompressao.length) {
+            vetorCompressao[contador++] = 0; //Ele pega a quantidade de números diferentes de 0, ex: 3, e soma mais 1 até o tamanho final da Lista(5)
+        } //No caso ele vai pegando a posição do elemento, Ex: vetorCompressao[3 + 1] = 0, ou seja a posição 3 + 1 coloca 0 a essa posição
         for (int k = 0; k < 5; k++) {
             System.out.println(vetorCompressao[k]);
         }

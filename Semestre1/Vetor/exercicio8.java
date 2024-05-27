@@ -1,32 +1,27 @@
 package Semestre1.Vetor;
 
 import java.util.Scanner;
-
 public class exercicio8 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        
-        int[] vetorRemove = new int[5];
+        int[] vetor = {10, 15, 20, 15, 15};
 
-        for(int i = 0; i < vetorRemove.length; i++){
-            System.out.print("Digite o elemento " + i + ": ");
-            vetorRemove[i] = scanner.nextInt();
-        }
-        
-        System.out.println("Digite o valor a ser retirado: ");
-        int valorRetiado = scanner.nextInt();
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Digite o valor que deseja retirar: ");
+        int valor = scanner.nextInt();
 
         int contador = 0;
-        for(int j = 0; j <  vetorRemove.length; j++){
-            if(vetorRemove[j] != valorRetiado){
-                vetorRemove[contador++] = vetorRemove[j];
+        for(int i = 0; i < vetor.length; i++){
+            if(vetor[i] != valor){
+                vetor[contador++] = vetor[i]; 
             }
         }
 
-        for(int k = 0; k < contador; k++){
-            System.out.print(vetorRemove[k] + " ");
+        System.out.println("Seu novo vetor: ");
+        for(int j = 0; j < contador; j++){
+            System.out.print(vetor[j] + " - ");
         }
 
         scanner.close();
+        
     }
 }

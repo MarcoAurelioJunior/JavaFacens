@@ -1,22 +1,12 @@
 package Semestre1.Vetor;
 
-import java.util.Scanner;
 public class exercicio6 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        int[] vetorReversao = new int[5];
-
-        for(int i = 0; i < vetorReversao.length; i++){
-            System.out.print("Digite o elemento " + (i + 1) + ": ");
-            vetorReversao[i] = scanner.nextInt();
-
+        int[] vetor = {10, 20, 30, 40, 50};
+        
+        System.out.println("Seu vetor ao contrário fica: ");
+        for(int i = 4; i >= 0; i--){
+            System.out.print(vetor[i] + " - ");
         }
-
-        for(int j = 4; j >= 0; j--){
-            System.out.print(vetorReversao[j] + ", ");
-        }
-
-        scanner.close();
     }
 }
